@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Corvo do Norte</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="corvo.css">
+</head>
+<body>
+
+<header class="cabecalho">
+  <img src="corvo.png" class="logo" alt="Corvo do Norte">
+  <h1>Corvos do Norte</h1>
+  <p class="subtitulo">Guilda de SwordPlayer • Registro Oficial</p>
+</header>
+
+<main class="container">
+
+  <!-- LOGIN ADMIN -->
+  <section class="painel login-box">
+    <input type="password" id="senhaAdmin" placeholder="Senha de administrador">
+    <button onclick="loginAdmin()">Entrar como admin</button>
+    <button onclick="logoutAdmin()">Sair</button>
+  </section>
+
+  <!-- PAINEL ADMIN -->
+  <section class="painel admin-only">
+    <input type="text" id="nome" placeholder="Nome do aventureiro">
+    <select id="classe">
+      <option value="Escudeiro">Escudeiro</option>
+      <option value="Cavaleiro">Cavaleiro</option>
+      <option value="Espadachim">Espadachim</option>
+      <option value="Lanceiro">Lanceiro</option>
+    </select>
+    <button onclick="adicionarMembro()">Adicionar</button>
+  </section>
+
+  <h2 class="titulo-ranking">
+    <span class="icone-escudo">
+      <svg viewBox="0 0 64 64" width="22" height="22">
+        <path d="M32 2 L58 10 V34 C58 46 46 56 32 62 C18 56 6 46 6 34 V10 Z"
+              fill="currentColor"/>
+      </svg>
+    </span>
+    Ranking da Guilda
+  </h2>
+
+  <ol id="ranking"></ol>
+
+</main>
+
+<script src="corvo.js"></script>
+</body>
+</html>
