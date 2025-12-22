@@ -1,0 +1,256 @@
+/* ---------- BASE ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #141414;
+  color: #f2f2f2;
+}
+
+/* ---------- CABEÇALHO ---------- */
+.cabecalho {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 3px solid #d4af37;
+}
+
+.logo {
+  width: 110px;
+}
+
+.subtitulo {
+  opacity: 0.8;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* ---------- PAINÉIS (CENTRALIZADOS) ---------- */
+.painel {
+  max-width: 600px;
+  margin: 0 auto 16px auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background: #1b1b1b;
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #2a2a2a;
+}
+
+.login-box {
+  max-width: 480px;
+}
+
+.painel input,
+.painel select {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+}
+
+.painel button {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  background: #d4af37;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.painel button:hover {
+  filter: brightness(1.1);
+}
+
+/* ---------- TÍTULO ---------- */
+.titulo-ranking {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 25px 0;
+  justify-content: center;
+}
+
+.icone-escudo {
+  color: #d4af37;
+}
+
+/* ---------- LISTA ---------- */
+ol {
+  padding: 0;
+}
+
+ol li {
+  list-style: none;
+  background: #1f1f1f;
+  margin-bottom: 18px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 14px;
+  border: 2px solid #2a2a2a;
+}
+
+/* ---------- TOP 3 ---------- */
+.top1 {
+  border-color: gold;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+}
+
+.top2 {
+  border-color: silver;
+  box-shadow: 0 0 18px rgba(200, 200, 200, 0.5);
+}
+
+.top3 {
+  border-color: #cd7f32;
+  box-shadow: 0 0 18px rgba(205, 127, 50, 0.5);
+}
+
+/* ---------- NOME ---------- */
+.nome {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+/* ---------- COROAS PREMIUM ---------- */
+.coroa {
+  display: inline-flex;
+  align-items: center;
+}
+
+.coroa svg {
+  width: 36px;
+  height: 26px;
+}
+
+.coroa.ouro {
+  color: gold;
+}
+
+.coroa.prata {
+  color: silver;
+}
+
+.coroa.bronze {
+  color: #cd7f32;
+}
+
+/* ---------- BADGES ---------- */
+.badge {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 2px solid;
+}
+
+/* Ranks */
+.ferro {
+  color: #8a8a8a;
+  border-color: #8a8a8a;
+}
+
+.prata {
+  color: #e0e0e0;
+  border-color: #e0e0e0;
+}
+
+.ouro {
+  color: #d4af37;
+  border-color: #d4af37;
+}
+
+.platina {
+  color: #7ad0ff;
+  border-color: #7ad0ff;
+}
+
+.mithril {
+  color: #4fc3f7;
+  border-color: #4fc3f7;
+}
+
+.oricalco {
+  color: #b388ff;
+  border-color: #b388ff;
+}
+
+.adamante {
+  color: #ffd700;
+  border-color: #ffd700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Classes */
+.classe.escudeiro {
+  color: #c0c0c0;
+  border-color: #c0c0c0;
+}
+
+.classe.cavaleiro {
+  color: #3b6cff;
+  border-color: #3b6cff;
+}
+
+.classe.espadachim {
+  color: #ff3b3b;
+  border-color: #ff3b3b;
+}
+
+.classe.lanceiro {
+  color: #2bff9a;
+  border-color: #2bff9a;
+}
+
+/* ---------- AÇÕES ---------- */
+.acoes {
+  display: flex;
+  gap: 6px;
+}
+
+.btn {
+  padding: 8px 14px;
+  font-size: 18px;
+  background: #333;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+.lixeira {
+  width: 36px;
+  height: 36px;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lixeira::before {
+  content: "✖";
+  font-size: 16px;
+}
