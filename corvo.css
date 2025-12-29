@@ -1,0 +1,120 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #121212;
+  color: #eee;
+  font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 3px solid gold;
+}
+
+.logo { width: 100px; }
+
+.insta-link {
+  display: inline-flex;
+  margin-top: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+  align-items: center;
+  justify-content: center;
+}
+
+.insta-icon {
+  width: 22px;
+  fill: white;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.painel {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 12px;
+  font-size: 16px;
+}
+
+button {
+  background: gold;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.titulo-ranking {
+  margin: 25px 0;
+}
+
+.ranking li {
+  list-style: none;
+  background: #1f1f1f;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TOPS */
+.top1 {
+  border: 3px solid gold;
+  box-shadow: 0 0 25px rgba(255,215,0,.6);
+}
+
+.top2 {
+  border: 3px solid silver;
+}
+
+.top3 {
+  border: 3px solid #cd7f32;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.coroa, .medalha {
+  font-size: 22px;
+}
+
+.titulo {
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* CLASSES */
+.classe {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  width: fit-content;
+}
+
+.escudeiro { background: #555; }
+.cavaleiro { background: #1e90ff; }
+.espadachim { background: #dc143c; }
+.lanceiro { background: #228b22; }
+.ladino { background: #6a0dad; }
+
+.pontos {
+  font-size: 20px;
+  font-weight: bold;
+}
