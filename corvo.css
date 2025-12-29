@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #141414;
+  color: #f2f2f2;
+}
+
+.cabecalho {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 3px solid #d4af37;
+}
+
+.logo {
+  width: 110px;
+}
+
+/* Instagram */
+.insta-link {
+  display: inline-flex;
+  margin-top: 12px;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    45deg,
+    #f58529,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  );
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.insta-link:hover {
+  transform: scale(1.15);
+}
+
+.insta-icon {
+  width: 22px;
+  height: 22px;
+  fill: white;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.admin-bar,
+.painel {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .painel {
+    flex-direction: column;
+  }
+}
+
+input,
+select,
+button {
+  padding: 12px;
+  font-size: 16px;
+}
+
+input {
+  flex: 1;
+}
+
+button {
+  background: #d4af37;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.titulo-ranking {
+  margin: 20px 0;
+}
+
+ol {
+  padding: 0;
+}
+
+ol li {
+  list-style: none;
+  background: #1f1f1f;
+  margin-bottom: 12px;
+  padding: 15px;
+  border-radius: 10px;
+}
