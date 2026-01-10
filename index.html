@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>&#67;&#111;&#114;&#118;&#111;&#115;&#32;&#100;&#111;&#32;&#78;&#111;&#114;&#116;&#101;</title>
+    <link rel="stylesheet" href="corvo.css">
+    <script>
+    (()=>{try{
+    const a=document,b=Object.defineProperty;
+    b(window,"__",{value:1,configurable:false});
+    ["querySelector","getElementById"].forEach(k=>{
+    const f=a[k];
+    b(a,k,{value:function(){return f.apply(this,arguments)},writable:false});
+    });
+    }catch(e){}})();
+    </script>
+    </head>
+    
+    <body>
+    
+    <header class="cabecalho">
+    <img src="corvo.png" class="logo" alt="">
+    <h1>&#67;&#111;&#114;&#118;&#111;&#115;&#32;&#100;&#111;&#32;&#78;&#111;&#114;&#116;&#101;</h1>
+    <p class="subtitulo">
+    &#71;&#117;&#105;&#108;&#100;&#97;&#32;&#100;&#101;&#32;&#83;&#119;&#111;&#114;&#100;&#80;&#108;&#97;&#121;&#101;&#114;
+    &#8226;
+    &#82;&#101;&#103;&#105;&#115;&#116;&#114;&#111;&#32;&#79;&#102;&#105;&#99;&#105;&#97;&#108;
+    </p>
+    
+    <a class="insta" rel="noreferrer noopener" target="_blank"
+    href="https://www.instagram.com/cdn_swordplay?igsh=b2VmN2ljeTRrYTJt">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.5a1 1 0 110 2 1 1 0 010-2z"/>
+    </svg>
+    </a>
+    </header>
+    
+    <main class="container">
+    
+    <div class="admin-bar">
+    <button type="button" onclick="window.loginGoogle&&window.loginGoogle()">
+    &#69;&#110;&#116;&#114;&#97;&#114;&#32;&#99;&#111;&#109;&#32;&#71;&#111;&#111;&#103;&#108;&#101;
+    </button>
+    
+    <button type="button" onclick="window.logoutGoogle&&window.logoutGoogle()">
+    &#83;&#97;&#105;&#114;
+    </button>
+    </div>
+    
+    <section class="painel">
+    <input id="nome" type="text"
+    placeholder="&#78;&#111;&#109;&#101;&#32;&#100;&#111;&#32;&#97;&#118;&#101;&#110;&#116;&#117;&#114;&#101;&#105;&#114;&#111;">
+    
+    <select id="titulo">
+    <option value="">&#84;&#237;&#116;&#117;&#108;&#111;</option>
+    <option>&#76;&#237;&#100;&#101;&#114;</option>
+    <option>&#67;&#111;&#110;&#115;&#101;&#108;&#104;&#101;&#105;&#114;&#111;</option>
+    <option>&#67;&#97;&#112;&#105;&#116;&#227;&#111;</option>
+    <option>&#77;&#101;&#109;&#98;&#114;&#111;</option>
+    </select>
+    
+    <select id="classe">
+    <option value="">&#67;&#108;&#97;&#115;&#115;&#101;</option>
+    <option>&#69;&#115;&#99;&#117;&#100;&#101;&#105;&#114;&#111;</option>
+    <option>&#67;&#97;&#118;&#97;&#108;&#101;&#105;&#114;&#111;</option>
+    <option>&#69;&#115;&#112;&#97;&#100;&#97;&#99;&#104;&#105;&#109;</option>
+    <option>&#76;&#97;&#110;&#99;&#101;&#105;&#114;&#111;</option>
+    <option>&#76;&#97;&#100;&#105;&#110;&#111;</option>
+    </select>
+    
+    <button type="button" onclick="window.adicionarMembro&&window.adicionarMembro()">
+    &#65;&#100;&#105;&#99;&#105;&#111;&#110;&#97;&#114;
+    </button>
+    </section>
+    
+    <h2 class="titulo-ranking">
+    &#128737;&#32;&#82;&#97;&#110;&#107;&#105;&#110;&#103;&#32;&#100;&#97;&#32;&#71;&#117;&#105;&#108;&#100;&#97;
+    </h2>
+    
+    <ol id="ranking"></ol>
+    
+    </main>
+    
+    <script type="module" src="corvo.js"></script>
+    
+    <script>
+    (()=>{try{
+    Object.freeze(window);
+    Object.freeze(document);
+    }catch(e){}})();
+    </script>
+    
+    </body></html>
+    
